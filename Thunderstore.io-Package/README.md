@@ -10,7 +10,6 @@ Useful for mod developers.
 |Setting|Default|Description|
 |--|--|--|
 |AutoPause|true|Pause the game with automatically loading|
-|Enabled|true|Disabled the mod.  Does not patch the game|
 
 # Note
 
