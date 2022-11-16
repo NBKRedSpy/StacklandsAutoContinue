@@ -8,15 +8,10 @@ namespace StacklandsAutoContinue;
 public class Plugin : BaseUnityPlugin
 {
     public static ConfigEntry<bool> AutoPauseConfig;
-    public static ConfigEntry<bool> ModEnabled;
-
 
     private void Awake()
     {
         AutoPauseConfig = Config.Bind("General", "AutoPause", true, "Pause the game with automatically loading");
-
-        ModEnabled = Config.Bind("General", "Enabled", true, "If true, this mod will be enabled.");
-
 
         Harmony harmony = new Harmony(MyPluginInfo.PLUGIN_GUID);
         harmony.PatchAll();

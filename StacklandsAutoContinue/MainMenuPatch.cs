@@ -13,16 +13,11 @@ namespace StacklandsAutoContinue
     {
         public static bool ShiftKeyWasChecked;
 
-        public static bool Prepare()
-        {
-            return Plugin.ModEnabled.Value;
-        }
-
         public static void Postfix()
         {
             if (!ShiftKeyWasChecked && !InputController.instance.GetKey(Key.LeftShift) && WorldManager.instance.CurrentSaveGame.LastPlayedRound != null)
             {
-                if(Plugin.AutoPauseConfig.Value == true)
+                if (Plugin.AutoPauseConfig.Value == true)
                 {
                     GameScreen.instance.TimePause();
                 }
