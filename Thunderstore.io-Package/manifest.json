@@ -1,0 +1,9 @@
+{
+    "name": "StacklandsAutoContinue",
+    "version_number": "1.0.0",
+    "website_url": "https://github.com/NBKRedSpy/StacklandsAutoContinue",
+    "description": "Automatically Loads the last save unless the shift key is pressed.",
+	"dependencies": [
+		"BepInEx-BepInExPack_Stacklands-5.4.2100"
+	]
+}
