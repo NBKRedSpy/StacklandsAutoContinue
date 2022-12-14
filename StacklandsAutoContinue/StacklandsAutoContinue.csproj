@@ -27,13 +27,13 @@
   
   <ItemGroup>
     <Reference Include="GameScripts">
-      <HintPath>E:\Games\Steam\steamapps\common\Stacklands\Stacklands_Data\Managed\GameScripts.dll</HintPath>
+      <HintPath>D:\Games\Steam\steamapps\common\Stacklands\Stacklands_Data\Managed\GameScripts.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InputSystem">
-      <HintPath>E:\Games\Steam\steamapps\common\Stacklands\Stacklands_Data\Managed\Unity.InputSystem.dll</HintPath>
+      <HintPath>D:\Games\Steam\steamapps\common\Stacklands\Stacklands_Data\Managed\Unity.InputSystem.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>E:\Games\Steam\steamapps\common\Stacklands\Stacklands_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>D:\Games\Steam\steamapps\common\Stacklands\Stacklands_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
   </ItemGroup>
   
