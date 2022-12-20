@@ -1,5 +1,6 @@
 ﻿using BepInEx;
 using BepInEx.Configuration;
+using BepInEx.Logging;
 using HarmonyLib;
 
 namespace StacklandsAutoContinue;
@@ -8,11 +9,13 @@ namespace StacklandsAutoContinue;
 public class Plugin : BaseUnityPlugin
 {
     public static ConfigEntry<bool> AutoPauseConfig;
+    public static ManualLogSource Log;
 
     private void Awake()
     {
         AutoPauseConfig = Config.Bind("General", "AutoPause", true, "Pause the game with automatically loading");
 
+        Log = Logger;
         Harmony harmony = new Harmony(MyPluginInfo.PLUGIN_GUID);
         harmony.PatchAll();
     }

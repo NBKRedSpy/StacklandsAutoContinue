@@ -16,5 +16,7 @@ Useful for mod developers.
 If holding shift is not aborting the automatic load, make sure the game is focused and shift was held down until the main menu is shown.
 
 
-
+# Change Log
+## 1.0.3
+Fixed compatibility with Stacklands v1.3.3
 
