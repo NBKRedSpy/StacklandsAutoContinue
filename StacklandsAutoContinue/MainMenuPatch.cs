@@ -15,7 +15,7 @@ namespace StacklandsAutoContinue
 
         public static void Postfix(CustomButton ___ContinueButton)
         {
-            if (!ShiftKeyWasChecked && !InputController.instance.GetKey(Key.LeftShift) && WorldManager.instance?.CurrentSaveGame?.LastPlayedRound != null)
+            if (!ShiftKeyWasChecked && !InputController.instance.GetKey(Key.LeftShift) && WorldManager.instance?.CurrentSave?.LastPlayedRound is not null)
             {
                 WorldManager.instance.LoadPreviousRound();
                 WorldManager.instance.Play();

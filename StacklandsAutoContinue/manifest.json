@@ -1,0 +1,7 @@
+{
+    "id": "StacklandsAutoContinue",
+    "name": "Auto Continue Game",
+    "version": "2.0.1",
+    "website_url": "https://github.com/NBKRedSpy/StacklandsAutoContinue",
+    "description": "Automatically Loads the last save unless the shift key is pressed."
+}
