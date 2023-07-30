@@ -17,19 +17,18 @@ namespace StacklandsAutoContinue
         {
             if (!ShiftKeyWasChecked && !InputController.instance.GetKey(Key.LeftShift) && WorldManager.instance?.CurrentSave?.LastPlayedRound is not null)
             {
-                WorldManager.instance.LoadPreviousRound();
-                WorldManager.instance.Play();
 
-                if (Plugin.AutoPauseConfig.Value == true)
-                {
-                    GameScreen.instance?.TimePause();
-                }
+				if (Plugin.AutoPauseConfig.Value == true)
+				{
+					GameScreen.instance?.TimePause();
+				}
 
+				var submitClickInfo = AccessTools.Method(typeof(CustomButton), "SubmitClick");
+                submitClickInfo.Invoke(___ContinueButton, null);
             }
 
             ShiftKeyWasChecked = true;
 
         }
-
-    }
+	}
 }
